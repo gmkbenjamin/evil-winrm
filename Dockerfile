@@ -52,7 +52,8 @@ WORKDIR /opt
 # Evil-WinRM install method 1 (only one method can be used, other must be commented)
 # Install Evil-WinRM (DockerHub automated build process)
 RUN mkdir evil-winrm
-COPY . /opt/evil-winrm
+# Only runtime source and its license belong in the image.
+COPY evil-winrm.rb LICENSE /opt/evil-winrm/
 
 # Evil-WinRM install method 2 (only one method can be used, other must be commented)
 # Install Evil-WinRM (manual image build)

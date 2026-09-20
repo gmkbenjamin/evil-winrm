@@ -1,0 +1,5 @@
+# Deny by default: a local checkout may contain history or private files.
+**
+!Dockerfile
+!evil-winrm.rb
+!LICENSE
